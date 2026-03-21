@@ -6,7 +6,7 @@
 /*   By: ayusa <ayusa@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 14:42:51 by ayusa             #+#    #+#             */
-/*   Updated: 2026/03/02 19:45:12 by ayusa            ###   ########.fr       */
+/*   Updated: 2026/03/21 16:20:38 by ayusa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,20 @@ static int	check_overflow(int sign, long current, char next)
 	return (0);
 }
 
+static int	ft_atoi_sign(const char **str)
+{
+	while (**str == 32 || (**str >= 9 && **str <= 13))
+		(*str)++;
+	if (**str == '-')
+	{
+		(*str)++;
+		return (-1);
+	}
+	if (**str == '+')
+		(*str)++;
+	return (1);
+}
+
 int	ft_atoi(const char *str)
 {
 	int					sign;
@@ -39,17 +53,8 @@ int	ft_atoi(const char *str)
 
 	if (!str)
 		return (0);
-	sign = 1;
 	result = 0;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-')
-	{
-		sign = -1;
-		str++;
-	}
-	else if (*str == '+')
-		str++;
+	sign = ft_atoi_sign(&str);
 	while (*str >= '0' && *str <= '9')
 	{
 		if (check_overflow(sign, result, *str) == 1)
