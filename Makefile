@@ -6,7 +6,7 @@
 #    By: ayusa <ayusa@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/02 00:02:40 by ayusa             #+#    #+#              #
-#    Updated: 2026/03/20 23:19:11 by ayusa            ###   ########.fr        #
+#    Updated: 2026/03/23 18:36:43 by ayusa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ MANDAT_SRCS = \
 	ft_atoi.c ft_atol.c ft_itoa.c ft_uitoa.c \
 	ft_putchar_fd.c ft_putstr_fd.c ft_putstrn_fd.c \
 	ft_putendl_fd.c ft_putnbr_fd.c \
-	ft_strlcat.c ft_strlcpy.c ft_strlen.c \
+	ft_strcmp_ci.c ft_strlcat.c ft_strlcpy.c ft_strlen.c \
 	ft_substr.c ft_strjoin.c ft_strtrim.c ft_strmapi.c \
 	ft_striteri.c ft_strcmp.c ft_strncmp.c ft_strnstr.c \
 	ft_strchr.c ft_strrchr.c ft_strdup.c \
