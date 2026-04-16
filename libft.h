@@ -6,7 +6,7 @@
 /*   By: ayusa <ayusa@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 00:02:20 by ayusa             #+#    #+#             */
-/*   Updated: 2026/03/23 18:36:20 by ayusa            ###   ########.fr       */
+/*   Updated: 2026/04/16 18:05:54 by ayusa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@
 
 # define PRINTABLE_MIN 32
 # define PRINTABLE_MAX 126
+
+# define BUFFER_SIZE 42
 
 typedef struct s_list
 {
@@ -79,5 +81,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+char	*get_next_line(int fd);
 
 #endif

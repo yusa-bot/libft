@@ -6,7 +6,7 @@
 #    By: ayusa <ayusa@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/02 00:02:40 by ayusa             #+#    #+#              #
-#    Updated: 2026/03/23 18:36:43 by ayusa            ###   ########.fr        #
+#    Updated: 2026/04/16 18:03:41 by ayusa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ MANDAT_SRCS = \
 	ft_split_c.c ft_split.c\
 	ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	ft_isdigit.c ft_isprint.c \
-	ft_tolower.c ft_toupper.c
+	ft_tolower.c ft_toupper.c get_next_line.c
 BONUS_SRCS  = \
 	ft_lstnew.c ft_lstadd_back.c ft_lstsize.c ft_lstadd_front.c \
 	ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c
