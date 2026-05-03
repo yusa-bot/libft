@@ -6,7 +6,7 @@
 /*   By: ayusa <ayusa@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 22:28:52 by ayusa             #+#    #+#             */
-/*   Updated: 2026/03/20 23:50:45 by ayusa            ###   ########.fr       */
+/*   Updated: 2026/05/03 22:00:58 by ayusa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,10 +97,7 @@ char	**ft_split(const char *s)
 	if (!out)
 		return (NULL);
 	if (!ft_fill_words(out, s))
-	{
-		free(out);
 		return (NULL);
-	}
 	return (out);
 }
 
