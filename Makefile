@@ -6,7 +6,7 @@
 #    By: ayusa <ayusa@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/02 00:02:40 by ayusa             #+#    #+#              #
-#    Updated: 2026/05/02 14:22:25 by ayusa            ###   ########.fr        #
+#    Updated: 2026/05/04 19:20:24 by ayusa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,7 @@ $(OBJDIR)/%.o: %.c
 	$(CC) $(CFLAGS) $(DEPFLAGS) -c $< -o $@
 
 bonus:
-	@make WITH_BONUS=1
+	$(MAKE) WITH_BONUS=1
 
 clean:
 	@printf "$(C_WARN)==> $(TAG) cleaning objects...$(C_RESET)\n"
