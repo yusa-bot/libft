@@ -1,0 +1,2 @@
+ft_strcmp.c 本家と違う
+ft_memcpy if (!dst && !src) いらない -> セグフォの動作が本家と違う
